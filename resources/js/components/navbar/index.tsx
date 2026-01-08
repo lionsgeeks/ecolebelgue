@@ -102,7 +102,7 @@ export default function Navbar() {
                                     <DropdownMenuTrigger asChild>
                                         <Button
                                             variant="ghost"
-                                            className="relative px-4 py-2 text-sm font-medium text-belgBlack transition-colors hover:text-belgRed"
+                                            className="relative px-4 py-2 text-sm font-medium text-belgBlack transition-colors hover:text-belgBlack/80 hover:bg-belgYellow/10"
                                         >
                                             {item.label}
                                             <ChevronDown className="ml-1 h-4 w-4" />
@@ -128,10 +128,10 @@ export default function Navbar() {
                             <Link
                                 key={item.label}
                                 href={item.href || '#'}
-                                className="relative px-4 py-2 text-sm font-medium text-belgBlack transition-colors hover:text-belgRed"
+                                className="group relative px-4 py-2 text-sm font-medium text-belgBlack transition-colors hover:text-belgBlack/80 hover:bg-belgYellow/10"
                             >
                                 {item.label}
-                                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-belgRed transition-all group-hover:w-full"></span>
+                                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-belgYellow transition-all group-hover:w-full"></span>
                             </Link>
                         );
                     })}
@@ -158,17 +158,11 @@ export default function Navbar() {
                         >
                             <SheetHeader>
                                 <SheetTitle className="flex items-center space-x-2 text-left">
-                                    <div className="flex items-center space-x-1">
-                                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-belgBlack text-sm font-bold text-white">
-                                            E
-                                        </div>
-                                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-belgYellow text-sm font-bold text-belgBlack">
-                                            B
-                                        </div>
-                                        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-belgRed text-sm font-bold text-white">
-                                            M
-                                        </div>
-                                    </div>
+                                    <img
+                                        src="/logo.png"
+                                        alt="EBM Logo"
+                                        className="h-10 w-auto"
+                                    />
                                     <span className="text-belgBlack">
                                         Menu
                                     </span>
@@ -191,7 +185,7 @@ export default function Navbar() {
                                                                 false,
                                                             )
                                                         }
-                                                        className="block px-6 py-2 text-sm text-belgBlack/80 transition-colors hover:bg-belgYellow/10 hover:text-belgRed"
+                                                        className="block px-6 py-2 text-sm text-belgBlack/80 transition-colors hover:bg-belgYellow/10 hover:text-belgBlack"
                                                     >
                                                         {subItem.label}
                                                     </Link>
@@ -203,7 +197,7 @@ export default function Navbar() {
                                                 onClick={() =>
                                                     setIsMobileMenuOpen(false)
                                                 }
-                                                className="block px-4 py-3 text-base font-medium text-belgBlack transition-colors hover:bg-belgYellow/10 hover:text-belgRed"
+                                                className="block px-4 py-3 text-base font-medium text-belgBlack transition-colors hover:bg-belgYellow/10 hover:text-belgBlack"
                                             >
                                                 {item.label}
                                             </Link>
