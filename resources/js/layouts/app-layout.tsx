@@ -1,5 +1,6 @@
 import { type ReactNode } from 'react';
 import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 
 interface AppLayoutProps {
     children: ReactNode;
@@ -7,9 +8,10 @@ interface AppLayoutProps {
 
 export default function AppLayout({ children }: AppLayoutProps) {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="flex min-h-screen flex-col bg-white">
             <Navbar />
-            <main className="w-full pt-20">{children}</main>
+            <main className="flex-1 w-full pt-20">{children}</main>
+            <Footer />
         </div>
     );
 }
