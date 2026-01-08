@@ -8,6 +8,23 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+
+
+
+
+    --color-belgYellow: #571123;
+    --color-belgRed: #662682;
+    --color-belgBlack: #171717;
+
+    
+
+
+
+
+
+
+
+
     --font-sans:
         'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
