@@ -11,16 +11,16 @@ createServer((page) =>
         render: ReactDOMServer.renderToString,
         title: (title) => (title ? `${title} - ${appName}` : appName),
         resolve: async (name) => {
-            const pages = import.meta.glob('./pages/**/*.{tsx,jsx}');
-            // Try .tsx first, then .jsx
+            const pages = import.meta.glob('./pages/**/*.{jsx,tsx}');
+            // Try .jsx first, then .tsx
             try {
                 return await resolvePageComponent(
-                    `./pages/${name}.tsx`,
+                    `./pages/${name}.jsx`,
                     pages,
                 );
             } catch {
                 return resolvePageComponent(
-                    `./pages/${name}.jsx`,
+                    `./pages/${name}.tsx`,
                     pages,
                 );
             }
