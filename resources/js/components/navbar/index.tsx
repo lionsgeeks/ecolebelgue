@@ -27,7 +27,7 @@ export default function Navbar() {
 
     const navItems: NavItem[] = [
         { label: 'Accueil', href: '/' },
-        { label: 'L’excellence belge', href: '/pourquoi' },
+        { label: 'L’excellence belge', href: '/lexcellence-belge' },
         {
             label: 'Scolarité',
             items: [
