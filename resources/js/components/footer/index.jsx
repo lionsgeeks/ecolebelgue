@@ -26,7 +26,7 @@ export default function Footer() {
                             <img
                                 src="/logo.png"
                                 alt="EBM Logo"
-                                className="h-14 w-auto brightness-0 invert"
+                                className="h-14 w-auto  "
                             />
                         </Link>
                         <div className="space-y-3">
