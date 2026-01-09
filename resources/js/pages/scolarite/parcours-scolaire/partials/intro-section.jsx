@@ -52,7 +52,7 @@ export default function IntroSection() {
                                 <DialogTrigger asChild>
                                     <Button
                                         size="lg"
-                                        className="bg-belgBlack hover:bg-belgBlack/90 text-white px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-full"
+                                        className="bg-belgBlack hover:bg-belgBlack/90 text-white px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl "
                                     >
                                         <Eye className="mr-2 h-5 w-5" />
                                         Notre parcours scolaire en un coup d'œil

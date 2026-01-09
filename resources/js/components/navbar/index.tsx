@@ -27,15 +27,7 @@ export default function Navbar() {
 
     const navItems: NavItem[] = [
         { label: 'Accueil', href: '/' },
-        {
-            label: 'Pourquoi choisir nos écoles ?',
-            items: [
-                {
-                    label: 'Pourquoi choisir nos écoles ?',
-                    href: '/pourquoi-choisir-nos-ecoles',
-                },
-            ],
-        },
+        { label: 'L’excellence belge', href: '/lexcellence-belge' },
         {
             label: 'Scolarité',
             items: [
@@ -49,16 +41,15 @@ export default function Navbar() {
         {
             label: 'Admissions',
             items: [
-                { label: 'Processus', href: '/admissions/processus' },
-                { label: 'Documents requis', href: '/admissions/documents' },
+                { label: 'Processus Et Type ', href: '/admissions/processus' },
                 { label: 'Frais', href: '/admissions/frais' },
             ],
         },
         {
             label: 'Nos Ecoles',
             items: [
-                { label: 'Rabat', href: '/rabat' },
-                { label: 'Casablanca', href: '/casablanca' },
+                { label: 'Casablanca', href: '/ecoles/casablanca' },
+                { label: 'Rabat', href: '/ecoles/rabat' },
             ],
         },
         { label: 'Contact', href: '/contact' },

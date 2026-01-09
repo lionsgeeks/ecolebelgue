@@ -92,7 +92,7 @@ export default function PrimaireSection() {
                         <DialogTrigger asChild>
                                     <Button
                                         size="lg"
-                                        className="bg-belgBlack hover:bg-belgBlack/90 text-white px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-full"
+                                        className="bg-belgBlack hover:bg-belgBlack/90 text-white px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl "
                                     >
                                 En savoir plus sur l'enseignement primaire dans nos écoles
                             </Button>

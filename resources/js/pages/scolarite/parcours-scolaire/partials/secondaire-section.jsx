@@ -93,7 +93,7 @@ export default function SecondaireSection() {
                         <DialogTrigger asChild>
                                     <Button
                                         size="lg"
-                                        className="bg-belgYellow hover:bg-belgYellow/90 text-belgBlack px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-full"
+                                        className="bg-belgYellow hover:bg-belgYellow/90 text-belgBlack px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl "
                                     >
                                 En savoir plus sur l'enseignement secondaire dans nos écoles
                             </Button>
