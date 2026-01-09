@@ -69,7 +69,7 @@ export default function EcoleDestinationSection() {
                             transformer l'avenir de votre enfant
                         </p>
                         <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                            <Link href="/contact">
+                            <Link href="/ecoles/rabat">
                                 <Button
                                     size="lg"
                                     className="px-8 py-3 text-base bg-[var(--color-belg-yellow)] font-semibold text-black shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:bg-[var(--color-belg-yellow)] hover:text-black"
@@ -77,7 +77,7 @@ export default function EcoleDestinationSection() {
                                     Visiter l'école de Rabat
                                 </Button>
                             </Link>
-                            <Link href="/contact">
+                            <Link href="/ecoles/casablanca">
                                 <Button
                                     size="lg"
                                     className="px-8 py-3 text-base bg-black font-semibold text-white shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl hover:bg-black hover:text-white"
