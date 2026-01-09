@@ -54,9 +54,8 @@ export default function Navbar() {
         {
             label: 'Nos Ecoles',
             items: [
-                { label: 'Localisation', href: '/ecoles/localisation' },
-                { label: 'Infrastructures', href: '/ecoles/infrastructures' },
-                { label: 'Équipe', href: '/ecoles/equipe' },
+                { label: 'Casablanca', href: '/ecoles/casablanca' },
+                { label: 'Rabat', href: '/ecoles/rabat' },
             ],
         },
         { label: 'Contact', href: '/contact' },
