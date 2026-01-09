@@ -2,9 +2,9 @@ export default function OverviewSection() {
     return (
         <section className="border-t border-gray-200 bg-white py-16 md:py-20">
             <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-                <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+                <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-stretch">
                     {/* Left Column - Text Content */}
-                    <div className="flex flex-col justify-center">
+                    <div className="flex flex-col justify-center h-full">
                         <div className="mb-4 inline-block border-l-4 border-belgYellow pl-4">
                             <p className="text-sm font-semibold uppercase tracking-wider text-belgBlack">
                                 Présentation
@@ -42,8 +42,8 @@ export default function OverviewSection() {
                     </div>
 
                     {/* Right Column - Image */}
-                    <div className="relative">
-                        <div className="relative aspect-[4/3] overflow-hidden">
+                    <div className="relative h-full">
+                        <div className="relative h-full overflow-hidden">
                             <img
                                 src="/assets/images/rabat/_MAN0164.jpg"
                                 alt="Campus de Rabat"
