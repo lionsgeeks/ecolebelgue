@@ -39,9 +39,8 @@ export default function Navbar() {
         {
             label: 'Admissions',
             items: [
-                { label: 'Processus', href: '/admissions/processus' },
-                { label: 'Documents requis', href: '/admissions/documents' },
-                { label: 'Frais', href: '/admissions/frais' },
+                { label: "Conditions de L'admissions", href: '/admissions/conditions' },
+                { label: 'Frais de scolarité', href: '/admissions/frais' },
             ],
         },
         {
