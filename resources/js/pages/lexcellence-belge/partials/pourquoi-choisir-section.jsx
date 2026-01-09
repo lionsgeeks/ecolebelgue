@@ -1,6 +1,8 @@
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
+import image from '../../../../../public/assets/images/lexcellence-belge/Notre projet pédagogique _ Bannière.jpg';
+
 export default function PourquoiChoisirSection() {
     return (
         <section className="py-20 px-6 bg-white">
@@ -10,18 +12,18 @@ export default function PourquoiChoisirSection() {
                         Choisir une école engage une trajectoire
                     </h2>
                 </div>
-                
+
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Image on left */}
                     <div className="relative order-1 md:order-1">
                         <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-belg-yellow)] to-[var(--color-belg-red)] rounded-2xl transform -rotate-3"></div>
-                        <img 
-                            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop&crop=center" 
-                            alt="Students learning" 
+                        <img
+                            src={image}
+                            alt="Students learning"
                             className="relative rounded-2xl shadow-2xl w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
                         />
                     </div>
-                    
+
                     {/* Text on right */}
                     <div className="order-2 md:order-2">
                         <div className="space-y-6">
@@ -57,11 +59,6 @@ export default function PourquoiChoisirSection() {
                                     <h3 className="text-xl font-bold text-[var(--color-belg-black)] mb-2 group-hover:text-[var(--color-belg-red)] transition-colors duration-300">La Qualification des Enseignants</h3>
                                     <p className="text-gray-600">Une équipe pédagogique hautement qualifiée, passionnée et engagée dans la réussite de chaque élève.</p>
                                 </div>
-                            </div>
-                            <div className="pt-6">
-                                <Button size="lg" className="bg-[var(--color-belg-red)] hover:bg-[var(--color-belg-red)]/90 text-white px-8 py-3 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                                    En savoir plus
-                                </Button>
                             </div>
                         </div>
                     </div>

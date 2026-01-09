@@ -22,7 +22,7 @@ export default function Banner({ title, description, buttonText = "Découvrir no
                         <Link href={buttonLink}>
                             <Button
                                 size="lg"
-                                className="bg-white  px-8 py-3 text-base font-semibold text-[var(--color-belg-red)] shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-gray-100 hover:shadow-2xl"
+                                className="bg-belg-red px-8 py-3 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-belg-red hover:shadow-2xl"
                             >
                                 {buttonText}
                             </Button>
@@ -30,8 +30,7 @@ export default function Banner({ title, description, buttonText = "Découvrir no
                         <Link href="/contact">
                             <Button
                                 size="lg"
-                                variant="outline"
-                                className="border-white/50 px-8 py-3 text-base font-semibold text-black shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-white hover:text-[var(--color-belg-red)] hover:shadow-xl"
+                                className="px-8 py-3 text-base font-semibold text-white shadow-lg bg-black backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-black hover:shadow-xl"
                             >
                                 Nous contacter
                             </Button>
