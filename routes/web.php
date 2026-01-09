@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\InstagramController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -24,5 +23,3 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 require __DIR__.'/settings.php';
 
-// API Routes
-Route::get('/api/instagram/posts', [InstagramController::class, 'getPosts']);

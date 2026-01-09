@@ -50,7 +50,7 @@ export default function HeroSection() {
                             asChild
                             variant="outline"
                             size="lg"
-                            className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg"
+                            className="text-black hover:bg-white/10 px-8 py-6 text-lg"
                         >
                             <Link href="/contact">Nous contacter</Link>
                         </Button>
