@@ -27,13 +27,23 @@ export default function Navbar() {
 
     const navItems: NavItem[] = [
         { label: 'Accueil', href: '/' },
-        { label: 'L’excellence belge', href: '/lexcellence-belge' },
+        {
+            label: 'Pourquoi choisir nos écoles ?',
+            items: [
+                {
+                    label: 'Pourquoi choisir nos écoles ?',
+                    href: '/pourquoi-choisir-nos-ecoles',
+                },
+            ],
+        },
         {
             label: 'Scolarité',
             items: [
-                { label: 'Programmes', href: '/scolarite/programmes' },
-                { label: 'Calendrier', href: '/scolarite/calendrier' },
-                { label: 'Examens', href: '/scolarite/examens' },
+                { label: 'Maternelle', href: '/maternelle' },
+                {
+                    label: 'Parcours scolaire (2-18 ans)',
+                    href: '/parcours-scolaire-2-18-ans',
+                },
             ],
         },
         {
@@ -47,8 +57,8 @@ export default function Navbar() {
         {
             label: 'Nos Ecoles',
             items: [
-                { label: 'Casablanca', href: '/ecoles/casablanca' },
-                { label: 'Rabat', href: '/ecoles/rabat' },
+                { label: 'Rabat', href: '/rabat' },
+                { label: 'Casablanca', href: '/casablanca' },
             ],
         },
         { label: 'Contact', href: '/contact' },

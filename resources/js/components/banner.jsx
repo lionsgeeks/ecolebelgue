@@ -3,7 +3,7 @@ import { Link } from '@inertiajs/react';
 
 export default function Banner({ title, description, buttonText = "Découvrir nos valeurs", buttonLink = "#valeurs" }) {
     return (
-        <section className="relative overflow-hidden bg-gradient-to-r from-[var(--color-belg-black)] via-[var(--color-belg-yellow)] to-[var(--color-belg-red)] text-white">
+        <section className="relative overflow-hidden bg-gradient-to-r from-belgBlack via-belgYellow to-belgRed text-white">
             <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
             <div className="absolute inset-0">
                 <div className="absolute top-20 left-10 h-72 w-72 animate-pulse rounded-full bg-white/10 blur-3xl"></div>
@@ -22,7 +22,7 @@ export default function Banner({ title, description, buttonText = "Découvrir no
                         <Link href={buttonLink}>
                             <Button
                                 size="lg"
-                                className="bg-belg-red px-8 py-3 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-belg-red hover:shadow-2xl"
+                                className="bg-belgRed px-8 py-3 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-belgRed/90 hover:shadow-2xl"
                             >
                                 {buttonText}
                             </Button>

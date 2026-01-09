@@ -7,6 +7,7 @@ use Inertia\Inertia;
 require __DIR__.'/home.php';
 
 // Public routes
+require __DIR__.'/pourquoi.php';
 require __DIR__.'/lexcellence-belge.php';
 require __DIR__.'/scolarite.php';
 require __DIR__.'/admissions.php';

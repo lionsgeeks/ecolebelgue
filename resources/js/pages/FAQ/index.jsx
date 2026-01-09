@@ -15,7 +15,7 @@ export default function FAQ() {
                 <Banner
                     title="FOIRE AUX QUESTIONS"
                     description="Retrouvez nos réponses à vos questions les plus récurrentes sur le système éducatif belge, la pédagogie, les admissions et bien plus encore."
-                    buttonText="ttt"
+                    buttonText="Nous contacter"
                     buttonLink="/contact"
                 />
                 <div className="container mx-auto max-w-7xl px-4 py-16 md:px-6 lg:px-8">
