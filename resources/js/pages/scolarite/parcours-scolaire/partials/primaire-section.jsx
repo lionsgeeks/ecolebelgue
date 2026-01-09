@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Brain, TrendingUp, Target } from 'lucide-react';
+import { BookOpen, Brain, TrendingUp, Target, CheckCircle2, BookText, Calculator, Globe, Lightbulb, Users } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 export default function PrimaireSection() {
@@ -90,21 +90,97 @@ export default function PrimaireSection() {
                 <div className="text-center">
                     <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
                         <DialogTrigger asChild>
-                                    <Button
-                                        size="lg"
-                                        className="bg-belgBlack hover:bg-belgBlack/90 text-white px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl "
-                                    >
+                            <Button
+                                size="lg"
+                                className="bg-belgBlack hover:bg-belgBlack/90 text-white px-8 py-6 text-lg font-semibold shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl "
+                            >
                                 En savoir plus sur l'enseignement primaire dans nos écoles
                             </Button>
                         </DialogTrigger>
-                        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
-                            <div className="space-y-6">
-                                <h3 className="text-2xl font-bold text-belgBlack">
-                                    En savoir plus sur l'enseignement primaire
-                                </h3>
-                                <div className="text-gray-700 space-y-4">
-                                    {/* Contenu à ajouter plus tard */}
-                                    <p>Le contenu détaillé sera ajouté prochainement.</p>
+                        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0">
+                            <div className="p-6 md:p-8 space-y-6">
+                                {/* Header */}
+                                <div className="text-center mb-6">
+                                    <h3 className="text-2xl md:text-3xl font-bold text-belgBlack">
+                                        En savoir plus sur l'enseignement primaire dans nos écoles
+                                    </h3>
+                                </div>
+
+                                {/* Main Content */}
+                                <div className="space-y-8">
+                                    {/* Introduction */}
+                                    <div className="bg-belgYellow/5 rounded-xl p-6 border-l-4 border-belgYellow">
+                                        <p className="text-lg leading-relaxed text-gray-700">
+                                            Au primaire, l'enfant acquiert les fondamentaux académiques et les méthodes de travail qui conditionneront toute la suite de sa scolarité.
+                                        </p>
+                                        <p className="text-lg leading-relaxed text-gray-700 mt-4 font-semibold">
+                                            Notre objectif au primaire est simple et exigeant : permettre à chaque élève de comprendre, de raisonner et de devenir progressivement autonome dans ses apprentissages, dans un cadre structuré et cohérent.
+                                        </p>
+                                    </div>
+
+                                    {/* Ce que l'élève apprend */}
+                                    <div className="space-y-4">
+                                        <h4 className="text-xl font-bold text-belgBlack flex items-center space-x-2">
+                                            <BookOpen className="h-6 w-6 text-belgRed" />
+                                            <span>Ce que l'élève apprend :</span>
+                                        </h4>
+                                        <div className="grid md:grid-cols-2 gap-4">
+                                            {[
+                                                { title: 'Lecture et compréhension', desc: 'de textes', icon: BookText, color: 'belgYellow' },
+                                                { title: 'Maîtrise progressive', desc: 'de l\'écriture', icon: BookOpen, color: 'belgRed' },
+                                                { title: 'Mathématiques', desc: 'raisonnement, logique, résolution de problèmes', icon: Calculator, color: 'belgBlack' },
+                                                { title: 'Développement du langage', desc: 'oral et écrit', icon: Users, color: 'belgYellow' },
+                                                { title: 'Découverte du monde', desc: 'des sciences et de la culture', icon: Globe, color: 'belgRed' },
+                                                { title: 'Apprendre à apprendre', desc: 'comprendre avant de mémoriser, raisonner avant d\'appliquer', icon: Brain, color: 'belgBlack' },
+                                            ].map((item, idx) => {
+                                                const IconComponent = item.icon;
+                                                const colorClasses = {
+                                                    belgYellow: 'bg-belgYellow/10 border-belgYellow text-belgBlack',
+                                                    belgRed: 'bg-belgRed/10 border-belgRed text-belgRed',
+                                                    belgBlack: 'bg-belgBlack/10 border-belgBlack text-belgBlack',
+                                                };
+                                                return (
+                                                    <div key={idx} className={`rounded-lg border-2 ${colorClasses[item.color]} p-4`}>
+                                                        <div className="flex items-center space-x-3 mb-2">
+                                                            <IconComponent className={`h-5 w-5 ${item.color === 'belgRed' ? 'text-belgRed' : item.color === 'belgBlack' ? 'text-belgBlack' : 'text-belgYellow'}`} />
+                                                            <h5 className="font-bold">{item.title}</h5>
+                                                        </div>
+                                                        <p className="text-sm text-gray-700">{item.desc}</p>
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                        <div className="bg-gray-50 rounded-lg p-4 mt-4 border-l-4 border-belgYellow">
+                                            <p className="text-gray-700 italic">
+                                                <strong>L'enfant apprend à apprendre, à comprendre avant de mémoriser, à raisonner avant d'appliquer.</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    {/* Comment l'élève apprend */}
+                                    <div className="space-y-4 bg-belgRed/5 rounded-xl p-6 border-l-4 border-belgRed">
+                                        <h4 className="text-xl font-bold text-belgBlack flex items-center space-x-2">
+                                            <Lightbulb className="h-6 w-6 text-belgRed" />
+                                            <span>Comment l'élève apprend :</span>
+                                        </h4>
+                                        <p className="text-gray-700 leading-relaxed">
+                                            Dans nos écoles, l'enfant de primaire apprend <strong>en faisant, en manipulant, en réfléchissant et en expliquant</strong>.
+                                        </p>
+                                        <p className="text-gray-700 font-semibold mt-4">La pédagogie déployée favorise :</p>
+                                        <ul className="space-y-3 ml-4 mt-4">
+                                            {[
+                                                'la compréhension en profondeur',
+                                                'le développement de l\'esprit critique et la capacité à expliquer',
+                                                'l\'engagement actif de l\'élève',
+                                                'le sens donné aux apprentissages',
+                                            ].map((item, idx) => (
+                                                <li key={idx} className="flex items-start space-x-2">
+                                                    <CheckCircle2 className="h-5 w-5 text-belgRed mt-0.5 flex-shrink-0" />
+                                                    <span className="text-gray-700">{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </DialogContent>
@@ -114,4 +190,3 @@ export default function PrimaireSection() {
         </section>
     );
 }
-
