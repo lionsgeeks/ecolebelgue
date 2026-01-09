@@ -27,14 +27,7 @@ export default function Navbar() {
 
     const navItems: NavItem[] = [
         { label: 'Accueil', href: '/' },
-        {
-            label: 'Pourquoi choisir nos écoles ?',
-            items: [
-                { label: 'Notre Mission', href: '/pourquoi/mission' },
-                { label: 'Nos Valeurs', href: '/pourquoi/valeurs' },
-                { label: 'Avantages', href: '/pourquoi/avantages' },
-            ],
-        },
+        { label: 'L’excellence belge', href: '/pourquoi' },
         {
             label: 'Scolarité',
             items: [

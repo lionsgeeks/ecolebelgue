@@ -12,7 +12,7 @@ export default function Home() {
             <SchoolsSection />
             <VideoSection />
             <StatisticsSection />
-            {/* <InstagramSection /> */}
+            <InstagramSection />
         </AppLayout>
     );
 }
