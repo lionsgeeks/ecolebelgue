@@ -13,10 +13,10 @@ export default function CtaSection() {
                     Rejoignez-nous
                 </Badge>
                 <h2 className="text-4xl md:text-5xl font-bold text-[var(--color-belg-black)] mb-6 leading-tight">
-                    Prêts à faire partie de notre aventure ?
+                    Prêt à Engager une Trajectoire d'Excellence ?
                 </h2>
                 <p className="text-gray-600 text-xl mb-12 max-w-3xl mx-auto leading-relaxed font-light">
-                    Découvrez comment notre mission peut transformer l'avenir de votre enfant
+                    Découvrez comment notre approche peut transformer l'avenir de votre enfant
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                     <Button size="lg" className="bg-[var(--color-belg-red)] hover:bg-[var(--color-belg-red)]/90 text-white px-12 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
