@@ -42,6 +42,7 @@ export default function Navbar() {
             label: 'Admissions',
             items: [
                 { label: "Conditions de L'admissions", href: '/admissions/conditions' },
+                { label: "Demande de L'admissions", href: '/admissions/demande' },
                 { label: 'Frais de scolarité', href: '/admissions/frais' },
             ],
         },
