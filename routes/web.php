@@ -14,6 +14,7 @@ require __DIR__.'/admissions.php';
 require __DIR__.'/ecoles.php';
 require __DIR__.'/contact.php';
 require __DIR__.'/faq.php';
+require __DIR__.'/calendrier.php';
 
 // Authenticated routes
 Route::middleware(['auth', 'verified'])->group(function () {

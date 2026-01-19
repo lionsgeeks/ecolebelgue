@@ -15,26 +15,19 @@ export default function OverviewSection() {
                         </h2>
                         <div className="space-y-4 text-lg leading-relaxed text-gray-700">
                             <p>
-                                Situé à Darbouazza, le campus de Casablanca s'étend sur 7,5 hectares
-                                et accueille actuellement 940 élèves de 2 ans (accueil) à 18 ans
-                                (fin du secondaire).
+                                Notre école de Casablanca offre un cursus scolaire belge francophone complet, de la classe d’accueil (2 ans) à la dernière année de l’enseignement secondaire (18 ans)
                             </p>
                             <p>
-                                Notre établissement propose un environnement d'apprentissage ouvert
-                                et orienté nature, à l'écart de l'agitation urbaine, conçu pour des
-                                conditions d'apprentissage épanouissantes et exigeantes.
+                                La langue d’enseignement est le français. L’arabe, l’anglais et l’espagnol y sont enseignés respectivement à partir de la M3, de la P1 et de la S4.
                             </p>
                             <p>
-                                Le campus dispose d'un espace de 1,5 hectare dédié à l'école du
-                                dehors, permettant une pédagogie mixte intérieur/extérieur. Cet
-                                espace est structuré en zones thématiques : animaux, insectes,
-                                météo, aventure, potager, feu de camp, espaces de rassemblement et
-                                restauration en plein air.
+                                L’école belge de Casablanca organise la cantine, la garderie, le transport et propose un programme varié d’activités extrascolaires pour tous les âges.
                             </p>
                             <p>
-                                Le campus se trouve en périphérie immédiate de la ville, à environ
-                                15 minutes du Morocco Mall, offrant un environnement spacieux, riche
-                                en nature, tout en restant facilement accessible.
+                                Implantée à Darbouazza au sein d’un campus de 7,5 hectares, l’école belge de Casablanca accueille ses élèves dans un environnement scolaire ouvert sur la nature, à l’écart de l’agitation urbaine, pensé pour offrir des conditions d’apprentissage à la fois épanouissantes et exigeantes.
+                            </p>
+                            <p>
+                                Aussi, notre établissement de Casablanca dispose d’un espace d’école du dehors déployé sur un terrain de 1,5 hectares, lui permettant d’adopter une pédagogie mixte « indoor/outdoor »
                             </p>
                         </div>
                     </div>

@@ -24,15 +24,16 @@ export default function HeroSection() {
                             Établissements scolaires Belges
                         </p>
                     </div>
-                    
-                    <h1 className="mb-6 text-5xl font-extrabold leading-tight text-white md:text-6xl lg:text-7xl">
-                        Excellence académique
+
+                    <h1 className="mb-6 text-5xl font-extrabold leading-tight text-white md:text-4xl lg:text-5xl">
+                        Bienvenue sur le site des écoles belges
+
                         <br />
                         <span className="text-belgYellow">au cœur du Maroc</span>
                     </h1>
-                    
+
                     <p className="mb-12 max-w-2xl text-xl leading-relaxed text-gray-100 md:text-2xl">
-                        Un enseignement belge reconnu, des écoles du Monde, une excellence académique et une ambiance de quartier.
+                        UN PROJET EDUCATIF DE DESTINATION
                     </p>
 
                     <div className="flex flex-wrap gap-4">
@@ -50,7 +51,7 @@ export default function HeroSection() {
                             asChild
                             variant="outline"
                             size="lg"
-                            className="border-white text-white hover:bg-white/10 hover:text-white px-8 py-6 text-lg"
+                            className="border-white text-black hover:bg-white/10 hover:text-white px-8 py-6 text-lg"
                         >
                             <Link href="/contact">Nous contacter</Link>
                         </Button>
